@@ -17,6 +17,7 @@ class stages(models.Model):
     
     usage = fields.Selection(
         string='Usage',
-        selection=[('in invoice', 'in invoice'), ('out invoice', 'out invoice')],
+        selection=[('in invoice', 'in invoice'), 
+                   ('out invoice', 'out invoice')],
     )
     

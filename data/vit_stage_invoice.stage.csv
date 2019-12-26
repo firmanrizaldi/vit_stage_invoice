@@ -1,4 +1,7 @@
 "id","name","usage"
 "AR_1","AR 1","out invoice"
 "AR_2","AR 2","out invoice"
-"AR_3","AR 3","in invoice"
+"AR_3","AR 3","out invoice"
+"AP_1","AP 1","in invoice"
+"AP_2","AP 2","in invoice"
+"AP_3","AP 3","in invoice"
