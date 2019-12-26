@@ -13,7 +13,8 @@ class stageinvoices(models.Model):
     
     stages = fields.Many2one(
         string='Stages',
-        comodel_name='vit_stage_invoice.stage'
+        comodel_name='vit_stage_invoice.stage',
+        domain=[('type', '=', "out invoice")]
     )
     
 

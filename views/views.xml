@@ -8,10 +8,11 @@
         <field name="inherit_id" ref="account.invoice_form"/>
         <field name="arch" type="xml">
           <xpath expr="//field[@name='user_id']" position="after">
-            <field name="stages"/>
+            <field name="stages" domain="[('usage', '=', ['out invoice'])]"/>
           </xpath>
         </field>
       </record>
+
 
       <record id="account_stages_filter" model="ir.ui.view">
           <field name="name">account_stages_filter</field>

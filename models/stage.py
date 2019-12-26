@@ -14,3 +14,9 @@ class stages(models.Model):
         string='Name',
         required=True,
     )
+    
+    usage = fields.Selection(
+        string='Usage',
+        selection=[('in invoice', 'in invoice'), ('out invoice', 'out invoice')],
+    )
+    
